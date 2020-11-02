@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/addons/p5.sound.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+
+  </head>
+  <h1 style> The Fairy Tale Story</h1>
+    <hr/>
+  <div class="container">
+    <h2>This is a project which generates text from a Markov chain. The program reads in text from Levis Carroll's Alice in Wolderland and text from Franz Kafka's Metamorphosis generates a new text from character-based "n-gram" probabilities from the source texts. Each text is weighted accordingly to the slider. </h2><br>
+  
+    <div class="container2">
+    <button id="generate" >Generate</button> 
+
+    <div class="container3">
+      <p><b>CARROLL &nbsp;</b><p>
+      <input id="slider" type="range" min="0" max="100">
+      <p><b>&nbsp; KAFKA</b></p>
+      </div>
+    </div>
+  </div>
+
+  <body>
+    <script src="markov.js"></script>
+    <script src="sketch.js"></script>
+        <div class="footer-bottom"><a href="https://www.bestesaylar.com/">Beste Saylar</a> &copy; 2020</div>
+      <p id="output"></p>
+  </body>
+</html>
